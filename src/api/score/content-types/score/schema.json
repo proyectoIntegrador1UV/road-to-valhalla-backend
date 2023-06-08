@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scores",
+  "info": {
+    "singularName": "score",
+    "pluralName": "scores",
+    "displayName": "Score",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "scores"
+    },
+    "sceneries": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::scenery.scenery",
+      "inversedBy": "scores"
+    },
+    "score": {
+      "type": "integer"
+    },
+    "initialDate": {
+      "type": "datetime"
+    },
+    "finishDate": {
+      "type": "datetime"
+    }
+  }
+}
