@@ -73,6 +73,21 @@
     },
     "name": {
       "type": "string"
+    },
+    "mitologiaScore": {
+      "type": "integer"
+    },
+    "culturaScore": {
+      "type": "integer"
+    },
+    "economiaScore": {
+      "type": "integer"
+    },
+    "quiz": {
+      "type": "integer"
+    },
+    "totalScore": {
+      "type": "integer"
     }
   }
 }
